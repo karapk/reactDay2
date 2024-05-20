@@ -21,7 +21,7 @@ export default function SignIn(props) {
         <h1>Welcome to Clicker Company</h1>
         <h4>The company where you click</h4>
         <p>Username: <input value={props.username} onChange={(e) => props.handleSetUserName(e.target.value)} /></p>
-        <p>Password: <input value={props.password} onChange={(e) => props.handleSetPassword(e.target.value)} /></p>
+        <p>Password: <input type= "password" value={props.password} onChange={(e) => props.handleSetPassword(e.target.value)} /></p>
         <button onClick={setLocalStorage}>Get Clicking!</button>
     </>
   )
